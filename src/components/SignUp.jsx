@@ -23,9 +23,12 @@ signUp() {
 
     render() {
         return (
-            <div className="form-inLine" style={{margin: '5%', width: '20%'}}>
+            <div
+                className="form-inLine"
+                style={{margin: '5%', width: '20%'}}>
                 <h2>Sign Up</h2>
-                <div className="form-group">
+                <div
+                    className="form-group">
                     <input
                         className="form-control"
                         type="text"
@@ -41,10 +44,10 @@ signUp() {
                         onChange={event => this.setState({password: event.target.value})}
                     />
                     <button
-                    className="btn btn-primary"
-                    type="button"
-                    style={{marginTop: '1%'}}
-                    onClick={() => this.signUp()}
+                        className="btn btn-primary"
+                        type="button"
+                        style={{marginTop: '1%'}}
+                        onClick={() => this.signUp()}
                     >
                     Sign Up
                     </button>
