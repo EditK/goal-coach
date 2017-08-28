@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import { firebaseApp } from '../firebase';
 
 class SignUp extends Component {
@@ -49,10 +50,11 @@ signUp() {
                         style={{marginTop: '1%'}}
                         onClick={() => this.signUp()}
                     >
-                    Sign Up
+                        Sign Up
                     </button>
                 </div>
                 <div>{this.state.error.message}</div>
+                <div><Link to={'/signin'}>Go to Sign in</Link></div>
             </div>
         )
     }
